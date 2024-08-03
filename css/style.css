@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(45deg, red, blue);
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: relative;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  opacity: 1;
+  z-index: 1000;
+}
+.move {
+  background: linear-gradient(45deg, #9b5a75, #6d333b);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  opacity: .9;
+  height: 80px;
+}
+.nav-bar img {
+  width: 80px;
+  height: 80px;
+}
+
+.nav-bar-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-bar-ul li a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.nav-bar-ul li a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #7985a6;
+  transition: all 0.3s ease;
+}
+
+.nav-bar-ul li a:hover::after {
+  width: 80%;
+}
+.nav-bar-ul a:hover {
+  color: #a0a6b7;
+}
+.all-contents {
+  text-align: center;
+  color: #ccc;
+  position: relative;
+}
+
+.bg-img-container {
+  background-image: url(/images/homepage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  filter: blur(3px);
+  position: relative;
+}
+
+.homepage-content {
+  text-align: center;
+  color: white;
+  border: 1px solid #c7867b;
+  padding: 20px;
+  height: max-content;
+  border-radius: 20%;
+  position: absolute;
+  align-items: center;
+  top: 8%;
+  left: 0;
+  width: 40%;
+}
+
+.about-me-bg {
+  background-image: url(/images/about-me.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  filter: blur(3px);
+}
+.about-me-content {
+  text-align: center;
+  color: white;
+  width: 40%;
+  border: 1px solid #c7867b;
+  padding: 20px;
+  height: max-content;
+  border-radius: 20%;
+  z-index: 15;
+  position: absolute;
+  right: 0;
+  top: 32%;
+}
+
+.my-projects-bg {
+  background-image: url(/images/project.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  filter: blur(3px);
+}
+.my-projects-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  text-align: start;
+  color: white;
+  padding: 20px;
+  height: max-content;
+  border-radius: 20%;
+  position: absolute;
+  top: 52%;
+}
+h2 {
+  color: rgb(243, 190, 126);
+}
+
+.cards {
+  border: 1px solid #c57466;
+  border-radius: 15%;
+  padding: 30px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(45deg, blue, red);
+  opacity: 1;
+}
+.cards i {
+  color: rgb(119, 255, 119);
+  font-size: 22px;
+  margin-right: 15px;
+}
+.cards h4 {
+  color: rgb(243, 190, 126);
+  margin: auto;
+}
+
+.cards h5 {
+  color: #ccc;
+  margin: auto;
+}
+.foundation-card p {
+  margin: 10px;
+  color: #d67766;
+}
+.pett-app-card p {
+  margin: 10px;
+  color: #878ed7;
+}
+
+.cards a {
+  color: #fff;
+  margin-top: auto;
+}
+.foundation-card a span {
+  text-decoration: underline;
+  color: #d67766;
+}
+.pett-app-card a span {
+  text-decoration: underline;
+  color: #878ed7;
+}
+.pett-app-card {
+  background: linear-gradient(45deg, blue, #6d333b);
+}
+
+.contact {
+  width: 85%;
+  margin: auto;
+  height: 70vh;
+  display: flex;
+  margin-top: 15px;
+}
+.location {
+  margin-right: 15px;
+}
+.location iframe {
+  border-radius: 10px;
+}
+.contact h2 {
+  color: #bcbfdc;
+  margin-bottom: 20px;
+}
+
+form label,
+input {
+  color: #878ed7;
+}
+
+.contact button {
+  background: linear-gradient(45deg, blue, #6d333b);
+  padding: 12px 22px;
+  color: #bcbfdc;
+}
+
+.contact textarea {
+  height: 120px !important;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(45deg, #6d333b, #9b5a75);
+  opacity: .8;
+}
+.socials{
+    margin-top: 10px;
+}
+
+.socials i{
+    font-size: 20px;
+    margin-left: 10px;
+   color: white;
+   border: 1px solid #9b5a75;
+   padding: 10px;
+   border-radius: 10px;
+
+
+}
+
+.copyright{
+    margin-top: auto;
+    color: wheat;
+}
+
+.socials i:hover{
+    background-color: #bd306b;
+}
